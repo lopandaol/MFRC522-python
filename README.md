@@ -20,6 +20,8 @@
   $ sudo python read.py
   ```
 
-[GeraintW Online Blog-RFID and Raspberry PI](http://geraintw.blogspot.kr/2014/01/rfid-and-raspberry-pi.html)
-[Hardware SPI as a C Extension for Python](https://github.com/lthiery/SPI-Py)
-[A small class to interface with the NFC reader Module MFRC522](https://github.com/mxgxw/MFRC522-python)
+* [GeraintW Online Blog-RFID and Raspberry PI](http://geraintw.blogspot.kr/2014/01/rfid-and-raspberry-pi.html)
+
+* [Hardware SPI as a C Extension for Python](https://github.com/lthiery/SPI-Py)
+
+* [A small class to interface with the NFC reader Module MFRC522](https://github.com/mxgxw/MFRC522-python)
