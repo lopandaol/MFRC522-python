@@ -1,51 +1,25 @@
-DCMotorKeyControl
-=========
+# MFRC522 RFID Card Reader
 
-Simple Keyboard Control for Raspberrypi RC-Car
+#### MFRC522 Python Library for Raspberry Pi
+  * Preparation
+  ```
+  $ sudo nano /etc/modprobe.d/raspi-blacklist.conf
+  #blacklist spi-bcm2708
+  ```
+  ```
+  $ sudo apt-get install python-dev
+  $ git clone https://github.com/lthiery/SPI-Py.git
+  $ cd SPI-Py
+  $ sudo python setup.py install
+  ```
 
-Project by www.rasplay.org - Multi-Control-RCCar
+  * Using Example
+  ```
+  $ git clone https://github.com/rasplay/MFRC522-python.git
+  $ cd MFRC522-python
+  $ sudo python read.py
+  ```
 
-This is C Source Code for RC Car with Raspberry-pi.
-
-Dependency
-
-HW
-
- 1. RC Car with DC Motor
- 2. Raspberry-pi, it is ultra-low-cost ($35) credit-card sized computer, can run Linux.
-
-SW
-
- 1. wiringPi, Library for Raspberry Pi GPIO Control
-
-Installation wiringPi Source
-
-$ git clone git://git.drogon.net/wiringPi
-
-$ cd wiringPi
-
-$ ./build
-
-Test wiringPi
-
-$ gpio -v
-
-DCMotorKeyControl Clone
-
-$ git clone https://github.com/rasplay/DCMotorKeyControl.git
-
-$ cd DCMotorKeyControl
-
-compile examples.
-
-$ gcc -o rc_key rc_key_1.c -lwiringPi
-
-rc_key_1.c use two motors, one is front-rear motor, the other is left-right motor.
-
-rc_key_2.c use two motors, one is left motor, the other is right motor.
-
-and, run
-
-$ sudo ./rc_key
-
-Enjoy!!  
+[GeraintW Online Blog-RFID and Raspberry PI](http://geraintw.blogspot.kr/2014/01/rfid-and-raspberry-pi.html)
+[Hardware SPI as a C Extension for Python](https://github.com/lthiery/SPI-Py)
+[A small class to interface with the NFC reader Module MFRC522](https://github.com/mxgxw/MFRC522-python)
